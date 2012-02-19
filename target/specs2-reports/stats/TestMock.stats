@@ -1,0 +1,3 @@
+<TestMock-results timestamp="1329488119217"><result location="TestMock (TestMock.scala:12)" id="3154409"><stats expectations="1" examples="1" failures="1" time="398"></stats></result>
+</TestMock-results>
+<TestMock-stats timestamp="1329488119227"><stats expectations="1" examples="1" failures="1" time="398"></stats></TestMock-stats>

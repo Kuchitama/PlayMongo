@@ -1,0 +1,17 @@
+@(results: scala.collection.mutable.HashMap[String, Int])
+@import scala.collection.mutable.HashMap
+
+@main("Browser Result") {
+<table>
+	<thead>
+		<th>Browser</th>
+		<th>Count</th>
+	</thead>
+@for(browser <- results){
+<tr>
+	<td>@browser._1</td>
+	<td>@browser._2</td>
+</tr>
+}
+</table>
+}

@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0mTestApplication[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mThe browsers map should[0m
+[0m[[0minfo[0m] [0m[32m+[0m contains 3 keys[0m
+[0m[[0minfo[0m] [0m [0m
+[0m[[0minfo[0m] [0mThe PlayMongo app should[0m
+[0m[[0minfo[0m] [0m[32m+[0m render result template[0m
+[0m[[31merror[0m] [0m[33mx[0m send 404 on a bad request[0m
+[0m[[31merror[0m] [0m    'Some(SimpleResult(200, Map(Content-Type -> text/html; charset=utf-8)))' is not None (TestApplication.scala:29)[0m
+[0m[[0minfo[0m] [0m [0m
+[0m[[0minfo[0m] [0m [0m
+[0m[[0minfo[0m] [0mTotal for specification TestApplication[0m
+[0m[[0minfo[0m] [0m[34mFinished in 1 second, 281 ms[0m[0m
+[0m[[0minfo[0m] [0m[34m3 examples, 1 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m

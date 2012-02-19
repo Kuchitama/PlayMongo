@@ -1,0 +1,14 @@
+[0m[[0minfo[0m] [0mTestMock[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mhoge should[0m
+[0m[[31merror[0m] [0m[33mx[0m fuga[0m
+[0m[[31merror[0m] [0m    'org.mockito.internal.stubbing.ConsecutiveStubbing@18509e9f' is not equal to 'one' (TestMock.scala:16)[0m
+[0m[[31merror[0m] [0mExpected: one[0m
+[0m[[31merror[0m] [0mActual:   org.mockito.internal.stubbing.ConsecutiveStubbing@18509e9f[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m [0m
+[0m[[0minfo[0m] [0m [0m
+[0m[[0minfo[0m] [0mTotal for specification TestMock[0m
+[0m[[0minfo[0m] [0m[34mFinished in 398 ms[0m[0m
+[0m[[0minfo[0m] [0m[34m1 example, 1 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m

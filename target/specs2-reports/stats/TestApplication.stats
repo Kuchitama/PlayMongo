@@ -1,0 +1,16 @@
+<TestApplication-stats timestamp="1328938732089"><stats expectations="1" examples="1" successes="1" time="46"></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1328939094216"><stats expectations="1" examples="1" successes="1" time="44"></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1328940167073"><stats expectations="3" examples="3" successes="3" time="949"><trend><stats expectations="2" examples="2" successes="2" time="993"></stats></trend></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1329146291064"><stats expectations="3" examples="3" successes="3" time="1591"></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1329147067405"><stats expectations="3" examples="3" successes="3" time="1518"></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1329147107031"><stats expectations="3" examples="3" successes="3" time="1490"></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1329147147453"><stats expectations="3" examples="3" successes="3" time="2613"></stats></TestApplication-stats>
+<TestApplication-results timestamp="1329147446273"><result location="TestApplication (TestApplication.scala:9)" id="634203252"><stats expectations="1" examples="1" failures="1" time="76"></stats></result>
+</TestApplication-results>
+<TestApplication-stats timestamp="1329147446297"><stats expectations="3" successes="2" examples="3" failures="1" time="1358"><trend><stats failures="1" successes="-1" time="3971"></stats></trend></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1329147511033"><stats expectations="3" examples="3" successes="3" time="1292"><trend><stats failures="-1" successes="1" time="2650"></stats></trend></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1329147675868"><stats expectations="3" examples="3" successes="3" time="2072"></stats></TestApplication-stats>
+<TestApplication-results timestamp="1329234833921"><result location="TestApplication (TestApplication.scala:25)" id="82173296"><stats expectations="1" examples="1" errors="1" time="853"></stats></result>
+</TestApplication-results>
+<TestApplication-stats timestamp="1329234833943"><stats expectations="4" successes="3" examples="4" errors="1" time="2121"><trend><stats expectations="1" examples="1" errors="1" time="4193"></stats></trend></stats></TestApplication-stats>
+<TestApplication-stats timestamp="1329488120766"><stats expectations="3" examples="3" successes="3" time="1122"><trend><stats expectations="-1" examples="-1" errors="-1" time="3243"></stats></trend></stats></TestApplication-stats>

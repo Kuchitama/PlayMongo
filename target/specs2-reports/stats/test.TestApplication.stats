@@ -1,0 +1,4 @@
+<test.TestApplication-stats timestamp="1328939797006"><stats expectations="2" examples="2" successes="2" time="128"></stats></test.TestApplication-stats>
+<test.TestApplication-results timestamp="1328940119011"><result location="test.TestApplication (TestApplication.scala:27)" id="576019252"><stats expectations="1" examples="1" failures="1" time="1146"></stats></result>
+</test.TestApplication-results>
+<test.TestApplication-stats timestamp="1328940119037"><stats expectations="3" successes="2" examples="3" failures="1" time="1281"><trend><stats expectations="1" examples="1" failures="1" time="1409"></stats></trend></stats></test.TestApplication-stats>
