@@ -4,7 +4,7 @@ package models
 //import com.novus.salat.global._
 import com.mongodb.casbah.Imports._
 
-object access {
+object Access {
     val collection = MongoConnection()("fluent")("access")
 
     def save(mongoObject : MongoDBObject) = {

@@ -27,6 +27,7 @@ object Application extends Controller {
         browsers.put("FireFox", browsers("FireFox") + 1)
       else if ( userAgent.contains("Chrome")) browsers.put("Chrome",browsers("Chrome") + 1)
       else if ( userAgent.contains("Safari")) browsers.put("Safari",browsers("Safari") + 1)
+      else browsers.put("Others", browsers("Others") + 1)
     }
 
     Ok(views.html.result(browsers))
