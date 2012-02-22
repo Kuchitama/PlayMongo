@@ -1,132 +1,447 @@
-2012-02-20 00:42:06,789 - [INFO] - from play in main 
+2012-02-22 23:53:55,910 - [INFO] - from play in main 
 Listening for HTTP on port 9000...
 
-2012-02-20 00:42:32,485 - [INFO] - from play in ForkJoinPool-1-worker-2 
+2012-02-22 23:54:13,585 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value access]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:54:20,683 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value access]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:55:02,236 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value contains]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:55:05,242 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value contains]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:55:34,693 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value contains]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:55:37,572 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value contains]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:55:43,991 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value contains]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:55:46,878 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value contains]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:55:58,732 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error ['=>' expected but '.' found.]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:56:00,483 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error ['=>' expected but '.' found.]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:58:42,141 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value contains]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:58:44,958 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value contains]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:59:21,215 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value access]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-22 23:59:23,709 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value access]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-23 00:00:07,425 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value access]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-23 00:00:10,082 - [ERROR] - from application in New I/O server worker #1-1 
+
+
+! Internal server error, for request [GET /] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [not found: value access]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11$$anonfun$apply$12.apply(PlayReloader.scala:202) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:202) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3$$anonfun$apply$11.apply(PlayReloader.scala:199) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:199) ~[na:na]
+	at sbt.PlayReloader$$anon$1$$anonfun$3.apply(PlayReloader.scala:198) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.2]
+	at sbt.PlayReloader$$anon$1.reload(PlayReloader.scala:198) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:89) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
+	at akka.dispatch.Future$$anon$2.liftedTree1$1(Future.scala:168) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.Future$$anon$2.run(Future.scala:167) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:83) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnable.exec(ForkJoinTask.java:1400) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) ~[akka-actor-2.0-M4.jar:2.0-M4]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor-2.0-M4.jar:2.0-M4]
+
+2012-02-23 00:00:40,774 - [INFO] - from play in ForkJoinPool-1-worker-6 
 Application started (Dev)
 
-2012-02-20 00:48:53,817 - [ERROR] - from com.mongodb.tcp in ForkJoinPool-3-worker-8 
-MyPort.error called
-java.io.IOException: couldn't connect to [/127.0.0.1:27017] bc:java.net.ConnectException: Connection refused
-	at com.mongodb.DBPort._open(DBPort.java:206) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:94) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:75) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.call(DBPort.java:65) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:201) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._check(DBCursor.java:354) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._hasNext(DBCursor.java:484) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor.hasNext(DBCursor.java:509) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.casbah.MongoCursorBase$class.hasNext(MongoCursor.scala:73) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at com.mongodb.casbah.MongoCursor.hasNext(MongoCursor.scala:497) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at scala.collection.Iterator$$anon$22.hasNext(Iterator.scala:388) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$class.foreach(Iterator.scala:660) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$$anon$22.foreach(Iterator.scala:382) [scala-library.jar:0.11.2]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) [classes/:na]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:18) [classes/:na]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anon$1.apply(Action.scala:170) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:9) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:50) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:40) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.Actor$class.apply(Actor.scala:292) [akka-actor-2.0-M4.jar:2.0-M4]
-	at play.core.ActionInvoker.apply(Invoker.scala:38) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.ActorCell.invoke(ActorCell.scala:482) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:182) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.run(Mailbox.scala:164) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.ForkJoinExecutorConfigurator$MailboxExecutionTask.exec(AbstractDispatcher.scala:448) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [akka-actor-2.0-M4.jar:2.0-M4]
-
-2012-02-20 00:48:53,834 - [ERROR] - from com.mongodb.tcp in ForkJoinPool-3-worker-8 
-MyPort.error called
-java.io.IOException: couldn't connect to [/127.0.0.1:27017] bc:java.net.ConnectException: Connection refused
-	at com.mongodb.DBPort._open(DBPort.java:206) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:94) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:75) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.call(DBPort.java:65) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:201) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._check(DBCursor.java:354) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._hasNext(DBCursor.java:484) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor.hasNext(DBCursor.java:509) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.casbah.MongoCursorBase$class.hasNext(MongoCursor.scala:73) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at com.mongodb.casbah.MongoCursor.hasNext(MongoCursor.scala:497) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at scala.collection.Iterator$$anon$22.hasNext(Iterator.scala:388) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$class.foreach(Iterator.scala:660) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$$anon$22.foreach(Iterator.scala:382) [scala-library.jar:0.11.2]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) [classes/:na]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:18) [classes/:na]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anon$1.apply(Action.scala:170) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:9) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:50) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:40) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.Actor$class.apply(Actor.scala:292) [akka-actor-2.0-M4.jar:2.0-M4]
-	at play.core.ActionInvoker.apply(Invoker.scala:38) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.ActorCell.invoke(ActorCell.scala:482) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:182) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.run(Mailbox.scala:164) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.ForkJoinExecutorConfigurator$MailboxExecutionTask.exec(AbstractDispatcher.scala:448) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [akka-actor-2.0-M4.jar:2.0-M4]
-
-2012-02-20 00:48:53,836 - [ERROR] - from com.mongodb.tcp in ForkJoinPool-3-worker-8 
-MyPort.error called
-java.io.IOException: couldn't connect to [/127.0.0.1:27017] bc:java.net.ConnectException: Connection refused
-	at com.mongodb.DBPort._open(DBPort.java:206) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:94) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:75) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.call(DBPort.java:65) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:201) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._check(DBCursor.java:354) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._hasNext(DBCursor.java:484) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor.hasNext(DBCursor.java:509) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.casbah.MongoCursorBase$class.hasNext(MongoCursor.scala:73) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at com.mongodb.casbah.MongoCursor.hasNext(MongoCursor.scala:497) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at scala.collection.Iterator$$anon$22.hasNext(Iterator.scala:388) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$class.foreach(Iterator.scala:660) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$$anon$22.foreach(Iterator.scala:382) [scala-library.jar:0.11.2]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) [classes/:na]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:18) [classes/:na]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anon$1.apply(Action.scala:170) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:9) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:50) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:40) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.Actor$class.apply(Actor.scala:292) [akka-actor-2.0-M4.jar:2.0-M4]
-	at play.core.ActionInvoker.apply(Invoker.scala:38) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.ActorCell.invoke(ActorCell.scala:482) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:182) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.run(Mailbox.scala:164) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.ForkJoinExecutorConfigurator$MailboxExecutionTask.exec(AbstractDispatcher.scala:448) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [akka-actor-2.0-M4.jar:2.0-M4]
-
-2012-02-20 00:48:53,886 - [ERROR] - from application in ForkJoinPool-3-worker-8 
+2012-02-23 00:00:54,617 - [ERROR] - from application in ForkJoinPool-3-worker-8 
 
 
-! @69e7ki048 - Internal server error, for request [GET /result] ->
+! @69f39en7a - Internal server error, for request [GET /result] ->
 
-play.core.ActionInvoker$$anonfun$receive$1$$anon$1: Execution exception [[Network: can't call something]]
+play.core.ActionInvoker$$anonfun$receive$1$$anon$1: Execution exception [[NoSuchElementException: key not found: Others]]
 	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:59) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:40) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	at akka.actor.Actor$class.apply(Actor.scala:292) [akka-actor-2.0-M4.jar:2.0-M4]
@@ -139,17 +454,13 @@ play.core.ActionInvoker$$anonfun$receive$1$$anon$1: Execution exception [[Networ
 	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) [akka-actor-2.0-M4.jar:2.0-M4]
 	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) [akka-actor-2.0-M4.jar:2.0-M4]
 	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [akka-actor-2.0-M4.jar:2.0-M4]
-Caused by: com.mongodb.MongoException$Network: can't call something
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:209) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._check(DBCursor.java:354) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._hasNext(DBCursor.java:484) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor.hasNext(DBCursor.java:509) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.casbah.MongoCursorBase$class.hasNext(MongoCursor.scala:73) ~[casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at com.mongodb.casbah.MongoCursor.hasNext(MongoCursor.scala:497) ~[casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at scala.collection.Iterator$$anon$22.hasNext(Iterator.scala:388) ~[scala-library.jar:0.11.2]
+Caused by: java.util.NoSuchElementException: key not found: Others
+	at scala.collection.MapLike$class.default(MapLike.scala:224) ~[scala-library.jar:0.11.2]
+	at scala.collection.mutable.HashMap.default(HashMap.scala:43) ~[scala-library.jar:0.11.2]
+	at scala.collection.MapLike$class.apply(MapLike.scala:135) ~[scala-library.jar:0.11.2]
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:43) ~[scala-library.jar:0.11.2]
+	at controllers.Application$$anonfun$result$1$$anonfun$apply$2.apply(Application.scala:37) ~[classes/:na]
+	at controllers.Application$$anonfun$result$1$$anonfun$apply$2.apply(Application.scala:20) ~[classes/:na]
 	at scala.collection.Iterator$class.foreach(Iterator.scala:660) ~[scala-library.jar:0.11.2]
 	at scala.collection.Iterator$$anon$22.foreach(Iterator.scala:382) ~[scala-library.jar:0.11.2]
 	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) ~[classes/:na]
@@ -162,137 +473,16 @@ Caused by: com.mongodb.MongoException$Network: can't call something
 	at play.utils.Threads$.withContextClassLoader(Threads.scala:9) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:50) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	... 11 common frames omitted
-Caused by: java.io.IOException: couldn't connect to [/127.0.0.1:27017] bc:java.net.ConnectException: Connection refused
-	at com.mongodb.DBPort._open(DBPort.java:206) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:94) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:75) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.call(DBPort.java:65) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:201) ~[mongo-java-driver-2.5.3.jar:na]
-	... 31 common frames omitted
 
-2012-02-20 00:48:54,735 - [ERROR] - from com.mongodb.tcp in ForkJoinPool-3-worker-8 
-MyPort.error called
-java.io.IOException: couldn't connect to [/127.0.0.1:27017] bc:java.net.ConnectException: Connection refused
-	at com.mongodb.DBPort._open(DBPort.java:206) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:94) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:75) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.call(DBPort.java:65) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:201) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._check(DBCursor.java:354) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._hasNext(DBCursor.java:484) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor.hasNext(DBCursor.java:509) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.casbah.MongoCursorBase$class.hasNext(MongoCursor.scala:73) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at com.mongodb.casbah.MongoCursor.hasNext(MongoCursor.scala:497) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at scala.collection.Iterator$$anon$22.hasNext(Iterator.scala:388) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$class.foreach(Iterator.scala:660) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$$anon$22.foreach(Iterator.scala:382) [scala-library.jar:0.11.2]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) [classes/:na]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:18) [classes/:na]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anon$1.apply(Action.scala:170) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:9) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:50) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:40) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.Actor$class.apply(Actor.scala:292) [akka-actor-2.0-M4.jar:2.0-M4]
-	at play.core.ActionInvoker.apply(Invoker.scala:38) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.ActorCell.invoke(ActorCell.scala:482) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:182) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.run(Mailbox.scala:164) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.ForkJoinExecutorConfigurator$MailboxExecutionTask.exec(AbstractDispatcher.scala:448) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [akka-actor-2.0-M4.jar:2.0-M4]
+2012-02-23 00:01:33,433 - [INFO] - from play in ForkJoinPool-1-worker-7 
+Application started (Dev)
 
-2012-02-20 00:48:54,737 - [ERROR] - from com.mongodb.tcp in ForkJoinPool-3-worker-8 
-MyPort.error called
-java.io.IOException: couldn't connect to [/127.0.0.1:27017] bc:java.net.ConnectException: Connection refused
-	at com.mongodb.DBPort._open(DBPort.java:206) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:94) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:75) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.call(DBPort.java:65) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:201) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._check(DBCursor.java:354) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._hasNext(DBCursor.java:484) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor.hasNext(DBCursor.java:509) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.casbah.MongoCursorBase$class.hasNext(MongoCursor.scala:73) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at com.mongodb.casbah.MongoCursor.hasNext(MongoCursor.scala:497) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at scala.collection.Iterator$$anon$22.hasNext(Iterator.scala:388) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$class.foreach(Iterator.scala:660) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$$anon$22.foreach(Iterator.scala:382) [scala-library.jar:0.11.2]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) [classes/:na]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:18) [classes/:na]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anon$1.apply(Action.scala:170) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:9) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:50) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:40) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.Actor$class.apply(Actor.scala:292) [akka-actor-2.0-M4.jar:2.0-M4]
-	at play.core.ActionInvoker.apply(Invoker.scala:38) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.ActorCell.invoke(ActorCell.scala:482) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:182) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.run(Mailbox.scala:164) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.ForkJoinExecutorConfigurator$MailboxExecutionTask.exec(AbstractDispatcher.scala:448) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [akka-actor-2.0-M4.jar:2.0-M4]
-
-2012-02-20 00:48:54,739 - [ERROR] - from com.mongodb.tcp in ForkJoinPool-3-worker-8 
-MyPort.error called
-java.io.IOException: couldn't connect to [/127.0.0.1:27017] bc:java.net.ConnectException: Connection refused
-	at com.mongodb.DBPort._open(DBPort.java:206) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:94) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:75) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.call(DBPort.java:65) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:201) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._check(DBCursor.java:354) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._hasNext(DBCursor.java:484) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor.hasNext(DBCursor.java:509) [mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.casbah.MongoCursorBase$class.hasNext(MongoCursor.scala:73) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at com.mongodb.casbah.MongoCursor.hasNext(MongoCursor.scala:497) [casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at scala.collection.Iterator$$anon$22.hasNext(Iterator.scala:388) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$class.foreach(Iterator.scala:660) [scala-library.jar:0.11.2]
-	at scala.collection.Iterator$$anon$22.foreach(Iterator.scala:382) [scala-library.jar:0.11.2]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) [classes/:na]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:18) [classes/:na]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.api.mvc.Action$$anon$1.apply(Action.scala:170) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1$$anonfun$4.apply(Invoker.scala:51) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:9) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:50) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:40) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.Actor$class.apply(Actor.scala:292) [akka-actor-2.0-M4.jar:2.0-M4]
-	at play.core.ActionInvoker.apply(Invoker.scala:38) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
-	at akka.actor.ActorCell.invoke(ActorCell.scala:482) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:182) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.Mailbox.run(Mailbox.scala:164) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.dispatch.ForkJoinExecutorConfigurator$MailboxExecutionTask.exec(AbstractDispatcher.scala:448) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:268) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) [akka-actor-2.0-M4.jar:2.0-M4]
-	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [akka-actor-2.0-M4.jar:2.0-M4]
-
-2012-02-20 00:48:54,748 - [ERROR] - from application in ForkJoinPool-3-worker-8 
+2012-02-23 00:01:33,500 - [ERROR] - from application in ForkJoinPool-3-worker-8 
 
 
-! @69e7ki049 - Internal server error, for request [GET /result] ->
+! @69f39en7b - Internal server error, for request [GET /result] ->
 
-play.core.ActionInvoker$$anonfun$receive$1$$anon$1: Execution exception [[Network: can't call something]]
+play.core.ActionInvoker$$anonfun$receive$1$$anon$1: Execution exception [[NoSuchElementException: key not found: MSIE]]
 	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:59) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:40) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	at akka.actor.Actor$class.apply(Actor.scala:292) [akka-actor-2.0-M4.jar:2.0-M4]
@@ -305,21 +495,17 @@ play.core.ActionInvoker$$anonfun$receive$1$$anon$1: Execution exception [[Networ
 	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:929) [akka-actor-2.0-M4.jar:2.0-M4]
 	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1303) [akka-actor-2.0-M4.jar:2.0-M4]
 	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [akka-actor-2.0-M4.jar:2.0-M4]
-Caused by: com.mongodb.MongoException$Network: can't call something
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:209) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:220) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._check(DBCursor.java:354) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor._hasNext(DBCursor.java:484) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBCursor.hasNext(DBCursor.java:509) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.casbah.MongoCursorBase$class.hasNext(MongoCursor.scala:73) ~[casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at com.mongodb.casbah.MongoCursor.hasNext(MongoCursor.scala:497) ~[casbah-core_2.9.0-1-2.1.5.0.jar:na]
-	at scala.collection.Iterator$$anon$22.hasNext(Iterator.scala:388) ~[scala-library.jar:0.11.2]
+Caused by: java.util.NoSuchElementException: key not found: MSIE
+	at scala.collection.MapLike$class.default(MapLike.scala:224) ~[scala-library.jar:0.11.2]
+	at scala.collection.mutable.HashMap.default(HashMap.scala:43) ~[scala-library.jar:0.11.2]
+	at scala.collection.MapLike$class.apply(MapLike.scala:135) ~[scala-library.jar:0.11.2]
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:43) ~[scala-library.jar:0.11.2]
+	at controllers.Application$$anonfun$result$1$$anonfun$apply$2.apply(Application.scala:33) ~[classes/:2.0-RC1-SNAPSHOT]
+	at controllers.Application$$anonfun$result$1$$anonfun$apply$2.apply(Application.scala:20) ~[classes/:2.0-RC1-SNAPSHOT]
 	at scala.collection.Iterator$class.foreach(Iterator.scala:660) ~[scala-library.jar:0.11.2]
 	at scala.collection.Iterator$$anon$22.foreach(Iterator.scala:382) ~[scala-library.jar:0.11.2]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) ~[classes/:na]
-	at controllers.Application$$anonfun$result$1.apply(Application.scala:18) ~[classes/:na]
+	at controllers.Application$$anonfun$result$1.apply(Application.scala:20) ~[classes/:2.0-RC1-SNAPSHOT]
+	at controllers.Application$$anonfun$result$1.apply(Application.scala:18) ~[classes/:2.0-RC1-SNAPSHOT]
 	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	at play.api.mvc.Action$$anonfun$apply$4.apply(Action.scala:204) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	at play.api.mvc.Action$$anon$1.apply(Action.scala:170) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
@@ -328,11 +514,7 @@ Caused by: com.mongodb.MongoException$Network: can't call something
 	at play.utils.Threads$.withContextClassLoader(Threads.scala:9) ~[play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	at play.core.ActionInvoker$$anonfun$receive$1.apply(Invoker.scala:50) [play_2.9.1.jar:2.0-RC1-SNAPSHOT]
 	... 11 common frames omitted
-Caused by: java.io.IOException: couldn't connect to [/127.0.0.1:27017] bc:java.net.ConnectException: Connection refused
-	at com.mongodb.DBPort._open(DBPort.java:206) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:94) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.go(DBPort.java:75) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBPort.call(DBPort.java:65) ~[mongo-java-driver-2.5.3.jar:na]
-	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:201) ~[mongo-java-driver-2.5.3.jar:na]
-	... 31 common frames omitted
+
+2012-02-23 00:02:10,426 - [INFO] - from play in ForkJoinPool-1-worker-8 
+Application started (Dev)
 

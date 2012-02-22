@@ -8,7 +8,7 @@ import scala.collection.mutable.HashMap
 import scala.collection.mutable.HashSet
 
 object Application extends Controller {
-  val browsers = HashMap[String, Int]("IE" -> 0, "FireFox" -> 0, "Chrome" -> 0, "Safari" -> 0, "Other" -> 0) 
+  val browsers = HashMap[String, Int]("IE" -> 0, "Firefox" -> 0, "Chrome" -> 0, "Safari" -> 0, "Others" -> 0) 
     var ips = List[Any]();
   
   def index = Action {
@@ -16,31 +16,32 @@ object Application extends Controller {
   }
   
   def result = Action {
-    val accesses = access.findAll;
+    val accesses = Access.findAll;
     for (access_log <- accesses if !ips.contains(access_log.get("host"))) {
       ips = access_log.get("host")::ips;
 
       val userAgent:String = access_log.get("agent").toString;
-      println("LOG:" + userAgent);
-      if ( userAgent.contains("MSIE")) browsers.put("IE", browsers("IE")+1)
-      else if ( userAgent.contains("FireFox"))
-        browsers.put("FireFox", browsers("FireFox") + 1)
-      else if ( userAgent.contains("Chrome")) browsers.put("Chrome",browsers("Chrome") + 1)
-      else if ( userAgent.contains("Safari")) browsers.put("Safari",browsers("Safari") + 1)
-      else browsers.put("Others", browsers("Others") + 1)
+      
+      userAgent match { 
+	      case ua if ua.contains("MSIE") => browsers.put("IE", browsers("IE") + 1)
+	      case ua if ua.contains("Firefox") => browsers.put("Firefox", browsers("Firefox") + 1)
+	      case ua if ua.contains("Chrome") => browsers.put("Chrome", browsers("Chrome") + 1)
+	      case ua if ua.contains("Safari") => browsers.put("Safari", browsers("Safari") + 1)
+	      case _ => browsers.put("Others", browsers("Others") + 1)
+      }
     }
 
     Ok(views.html.result(browsers))
   }
 
   def add(host : String,  agent: String) = Action {
-    access.save(MongoDBObject("host"->host, "agent"->agent))
+    Access.save(MongoDBObject("host"->host, "agent"->agent))
     
     Ok("Saved host:" + host)
   }
 
   def showAll = Action {
-    val savedColls = access.findAll
+    val savedColls = Access.findAll
 
     Ok(views.html.index("ほげほげ"))
   }

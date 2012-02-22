@@ -37,3 +37,5 @@ test-only
 eclipsify
 test-only
 run
+test-only
+run

@@ -1,6 +1,6 @@
-// @SOURCE:/Users/k2/ProgramProjects/Scala/PlayMongo/conf/routes
+// @SOURCE:/Users/k2/git/PlayMongo/PlayMongo/conf/routes
 // @HASH:362684aeabf7cb8e84d1719fd8992d1d46ae50d2
-// @DATE:Sun Feb 12 16:38:07 JST 2012
+// @DATE:Wed Feb 22 23:42:49 JST 2012
 
 import play.core._
 import play.core.Router._
